@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-position: 700px 900px;
+    background-attachment: fixed;
+}
+
+#particles-js
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #262626; */
+}
+/* Text Settings */
+.header h1 {
+  padding: 350px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Typing Cursor */
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+/* Animation */
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
