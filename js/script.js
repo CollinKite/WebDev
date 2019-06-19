@@ -1,7 +1,7 @@
 console.log("Ah so you've found my Javascript huh");
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Webdeveloper", "Graphic Designer", "Collin Kite"];
+  var dataText = [ "Collin Kite", ];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished

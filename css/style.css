@@ -1,13 +1,80 @@
 body {
+    margin: 0;
     width: 100%;
     height: 100%;
-    background-position: 700px 900px;
-    background-attachment: fixed;
     font-family: varela round,sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
     color: #868f9b;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background:        #1C1D21
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 4%;
+  height: 3%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #FDFDFD;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
 
 #particles-js
@@ -25,6 +92,9 @@ body {
   color: white;
   text-transform: uppercase;
   text-align: center;
+}
+.header {
+  height: 55.5em;
 }
 /* Typing Cursor */
 span {
@@ -92,3 +162,4 @@ span {
 ::selection {
     background-color: #6195FF;
     color: #FFF
+}
