@@ -3,6 +3,11 @@ body {
     height: 100%;
     background-position: 700px 900px;
     background-attachment: fixed;
+    font-family: varela round,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868f9b;
 }
 
 #particles-js
@@ -15,7 +20,7 @@ body {
 /* Text Settings */
 .header h1 {
   padding: 350px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'tradegothiclt-bold', sans-serif;
   font-size: 5em;
   color: white;
   text-transform: uppercase;
@@ -32,3 +37,58 @@ span {
     border-color: transparent;
   }
 }
+
+.sm-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bg-dark {
+    background-color: #1C1D21;
+}
+
+
+#footer {
+    position: relative;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo>a>img {
+    max-height: 80px;
+}
+
+.footer-follow {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-follow li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+.footer-follow li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #6195FF;
+  color:#FFF;
+}
+
+.footer-copyright p {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+}
+::selection {
+    background-color: #6195FF;
+    color: #FFF
