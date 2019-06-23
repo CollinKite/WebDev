@@ -3,7 +3,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: varela round,sans-serif;
+    font-family: 'varela round', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
@@ -20,48 +20,57 @@ body {
     background-color: #1C1D21;
 }
 
+
+.sm-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bg-dark {
+  background-color: #1C1D21;
+}
+
+
 #footer {
-position: absolute;
- bottom: 0;
- width: 100%;
+  position: relative;
 }
 
 .footer-logo {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .footer-logo>a>img {
-    max-height: 80px;
+  max-height: 80px;
 }
 
 .footer-follow {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer-follow li {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 13px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 13px;
 }
 
 .footer-follow li a {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 3px;
-  background-color: #6195FF;
-  color:#FFF;
+display: inline-block;
+width: 50px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+border-radius: 3px;
+background-color: #6195FF;
+color:#FFF;
 }
 
 .footer-copyright p {
-    text-align: center;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 0;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .image {
@@ -263,4 +272,15 @@ ul.float {
   }
   ul.wall li:hover {
     width: 110px;
+  }
+  
+  .float span {
+    color: inherit; 
+    text-decoration:none;   
+  }
+  
+  .float a:hover {
+    color: inherit; 
+    text-decoration:none; 
+    cursor:pointer;  
   }
