@@ -1,32 +1,326 @@
-#particles-js
-{
-  position: absolute;
+body {
+  margin: 0;
   width: 100%;
   height: 100%;
-  /* background: #262626; */
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: #868f9b;
+}
+
+#particles-js
+{
+position: absolute;
+width: 100%;
+height: 100%;
+/* background: #262626; */
 }
 .circular--portrait {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 50%;
+position: absolute;
+top: 35%;
+left: 50%;
+/* bring your own prefixes */
+transform: translate(-50%, -50%);
+width: 300px;
+height: 300px;
+overflow: hidden;
+border-radius: 50%;
 }
 .circular--portrait img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 .breathe {
+position: absolute;
+top: 55%;
+left: 33%;
+font-family: 'Gloria Hallelujah', cursive;
+font-size: 3.5em;
+/* text-transform: uppercase; */
+color: azure;
+}
+
+#page-container {
+position: relative;
+min-height: 100vh;
+}
+
+#content-wrap {
+padding-bottom: 250px;    /* Footer height */
+}
+
+#footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 250px;            /* Footer height */
+}
+
+/* .sm-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
+
+.bg-dark {
+  background-color: #1C1D21;
+}
+
+
+.sm-padding {
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.bg-dark {
+background-color: #1C1D21;
+}
+
+.footer-logo {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.footer-logo>a>img {
+max-height: 80px;
+}
+
+.footer-follow {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.footer-follow li {
+display: inline-block;
+margin-right: 10px;
+margin-bottom: 13px;
+}
+
+.footer-follow li a {
+display: inline-block;
+width: 50px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+border-radius: 3px;
+background-color: #6195FF;
+color:#FFF;
+}
+
+.footer-copyright p {
+text-align: center;
+font-size: 14px;
+text-transform: uppercase;
+margin: 0;
+}
+
+.image {
+  background-color: #490D40;
+  background: url(https://sonorangirl.github.io/Earth-Quotes/img/google-earth-view-South-Iceland3.jpg) no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  margin-top: -20px;
+}
+.image .heading {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+.image p {
+  text-align: center;
+  padding: 20px 60px;
+}
+.image p .btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.image p .btn:hover {
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 255, 98);
+}
+
+.navbar {
+  height: 67px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: white;
+}
+.navbar-default .navbar-brand:hover {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 225, 255);
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 255, 98);
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+.navbar-default .navbar-toggle {
+  border-color: rgb(0, 255, 136);
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgb(10, 10, 10);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: rgb(255, 255, 255);
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+  color: rgb(0, 0, 0);
+  transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+  color: rgb(0, 0, 0);
+  transition: color 1s ease 0s;
+}.navbar-left >li > img {
+  max-height: 50px;
+  display: block;
+  padding-top: 20px;
+}
+* {
+  box-sizing: border-box;
+  transition: all 0.18s ease-out;
+}
+ul.float {
+  position: fixed;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+ul.float li {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 8px 0;
+  color: #222;
+  cursor: pointer;
+  height: 36px;
+  overflow: hidden;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+}
+ul.float li i.fa {
+  font-size: 1.2rem;
+  width: 36px;
+  text-align: center;
+  position: relative;
+  top: 0.04em;
+}
+ul.float li i.fa.fa-instagram {
+  font-size: 1.3em;
+}
+ul.float li i.fa.fa-twitter {
+  font-size: 1.3em;
+}
+ul.float li i.fa.fa-twitch {
+  font-size: 1.3em;
+}
+ul.float li i.fa.fa-linkedin {
+  font-size: 1.1em;
+}
+ul.float li i.fa.fa-github {
+  font-size: 1.45em;
+}
+ul.float li span {
+  font-size: 16px;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: 36px;
   position: absolute;
-  top: 55%;
-  left: 35%;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 3.5em;
-  /* text-transform: uppercase; */
-  color: azure;
+  opacity: 0;
+  visibility: hidden;
+}
+ul.float li:hover {
+  background: #fff;
+  box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.1);
+}
+ul.float li:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 90ms;
+}
+ul.float li:hover i {
+  opacity: 1;
+}
+ul.float li:hover i.fa-instagram {
+  color: #ea4c89;
+}
+ul.float li:hover i.fa-twitter {
+  color: #00aced;
+}
+ul.float li:hover i.fa-twitch {
+  color: #6d17cf;
+}
+ul.float li:hover i.fa-github {
+  color: #696969;
+}
+ul.float li:hover i.fa-linkedin {
+  color: #0077b5;
+}
+ul.float {
+  left: 7%;
+}
+ul.float li {
+  width: 36px;
+  border-radius: 22px;
+}
+ul.float li:hover {
+  width: 112px;
+}
+ul.wall {
+  align-items: flex-end;
+  right: 0;
+}
+ul.wall li {
+  width: 40px;
+  border-radius: 22px 0 0 22px;
+}
+ul.wall li:hover {
+  width: 110px;
+}
+
+.float span {
+  color: inherit; 
+  text-decoration:none;   
+}
+
+.float a:hover {
+  color: inherit; 
+  text-decoration:none; 
+  cursor:pointer;  
 }
