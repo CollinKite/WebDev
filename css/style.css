@@ -234,7 +234,7 @@ ul.float li {
   overflow: hidden;
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
 }
-ul.float li i.fa {
+ul.float li > a> i.fa {
   font-size: 1.2rem;
   width: 36px;
   text-align: center;
@@ -302,17 +302,6 @@ ul.float li {
 ul.float li:hover {
   width: 112px;
 }
-ul.wall {
-  align-items: flex-end;
-  right: 0;
-}
-ul.wall li {
-  width: 40px;
-  border-radius: 22px 0 0 22px;
-}
-ul.wall li:hover {
-  width: 110px;
-}
 
 .float span {
   color: inherit; 
@@ -323,4 +312,7 @@ ul.wall li:hover {
   color: inherit; 
   text-decoration:none; 
   cursor:pointer;  
+}
+ul.float > li > a {
+  color: #1C1D21
 }

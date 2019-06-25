@@ -370,4 +370,6 @@ body {
     top: 25%;
   }
 
-  
+  ul.float > li > a {
+    color: #1C1D21
+  }
